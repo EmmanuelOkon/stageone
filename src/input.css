@@ -24,7 +24,7 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
-p {
+p, span {
   /* font-family: "Raleway", sans-serif; */
   font-family: "Poppins", sans-serif;
 }

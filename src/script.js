@@ -6,8 +6,9 @@ function updateTime() {
   const currentUTCTimeElement = document.querySelector(
     '[data-testid="currentUTCTime"]'
   );
-
   const currentDate = new Date();
+  const utcPlusOneOffset = 1 * 60; 
+  currentDate.setUTCMinutes(currentDate.getUTCMinutes() + utcPlusOneOffset);
 
   const daysOfWeek = [
     "Sunday",
@@ -23,10 +24,11 @@ function updateTime() {
 
   const currentUTCHours = currentDate.getUTCHours();
   const currentUTCMinutes = currentDate.getUTCMinutes();
-  const currentUTCSeconds = currentDate.getUTCSeconds();
   const currentTimeFormat = currentUTCHours >= 12 ? "PM" : "AM";
   const formattedUTCHours = currentUTCHours % 12 || 12;
-  const currentUTCTime = `${formattedUTCHours}:${currentUTCMinutes.toString().padStart(2, '0')} ${currentTimeFormat} Local Time`;
+  const currentUTCTime = `${formattedUTCHours}:${currentUTCMinutes
+    .toString()
+    .padStart(2, "0")} ${currentTimeFormat} `;
 
   currentDayOfTheWeekElement.textContent = currentDayOfWeek;
   currentUTCTimeElement.textContent = currentUTCTime;

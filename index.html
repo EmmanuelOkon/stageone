@@ -8,44 +8,37 @@
     <link rel="stylesheet" href="./src/input.css" />
     <script src="./src/script.js" defer></script>
   </head>
-  <body class="flex justify-center items-center h-screen bg-orange-50">
-    <section class="md:w-[70%] rounded-md mx-auto bg-blue-100 px-12 py-2">
-      <div class="flex items-center justify-between  ">
-        <div class="">
-          <h1 class="font- font-bold text-2xl">
-            Hello
-            <span class="text-orange-500" data-testid="slackUserName"
-              >whiteBlack!</span
-            >
-          </h1>
-        </div>
-        <div class="flex items-center gap-2">
-          <p
-            class="text-gray-600 font-semibold hover:cursor-pointer hover:text-black"
-          >
-            Emmanuel Okon
-          </p>
-          <div class="bg-gray-100 rounded-md">
-            <img
-              src="./assets/profile.jpg"
-              alt="whiteBlack"
-              data-testid="slackDisplayImage"
-              class="rounded-md w-10 h-10"
-            />
-          </div>
+  <body class="flex justify-center items-center h-screen bg-gray-50">
+    <section
+      class="rounded-md mxauto bg-blue-100 px-4 lg:px-8 pt-4 pb-8 shadow-md"
+    >
+      <div class="flex flex-col items-center">
+        <div class="rounded-full">
+          <img
+            src="./assets/profile.jpg"
+            alt="whiteBlack"
+            data-testid="slackDisplayImage"
+            class="rounded-md md:roundedfull w-44 h-44"
+          />
         </div>
       </div>
+
       <div class="">
-        <p data-testid="currentDayOfTheWeek"></p>
-  
-        <p data-testid="currentUTCTime"></p>
-  
-        
-        <span>Learning Track:</span>
+        <p
+          class="text-left text-gray-800 hover:text-gray-500 hover:cursor-pointer font-semibold text-[20px] lg:text-2xl py-4"
+          data-testid="slackUserName"
+        >
+          whiteBlack
+        </p>
         <p data-testid="myTrack">Frontend</p>
-  
+        <div class="flex items-center">
+          <p data-testid="currentDayOfTheWeek"></p>
+          ,
+          <span class="pl-1" data-testid="currentUTCTime"></span>
+        </div>
+
         <a
-          href="https://github.com/EmmanuelOkon/"
+          href="https://github.com/EmmanuelOkon/stageone"
           data-testid="githubURL"
           target="_blank"
           >GitHub Repository</a
