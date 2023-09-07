@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Frontend Task</title>
+    <link rel="stylesheet" href="./src/input.css" />
+    <script src="./src/script.js" defer></script>
+  </head>
+  <body class="flex justify-center items-center h-screen bg-orange-50">
+    <section class="md:w-[70%] rounded-md mx-auto bg-blue-100 px-12 py-2">
+      <div class="flex items-center justify-between  ">
+        <div class="">
+          <h1 class="font- font-bold text-2xl">
+            Hello
+            <span class="text-orange-500" data-testid="slackUserName"
+              >whiteBlack!</span
+            >
+          </h1>
+        </div>
+        <div class="flex items-center gap-2">
+          <p
+            class="text-gray-600 font-semibold hover:cursor-pointer hover:text-black"
+          >
+            Emmanuel Okon
+          </p>
+          <div class="bg-gray-100 rounded-md">
+            <img
+              src="./assets/profile.jpg"
+              alt="whiteBlack"
+              data-testid="slackDisplayImage"
+              class="rounded-md w-10 h-10"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <p data-testid="currentDayOfTheWeek"></p>
+  
+        <p data-testid="currentUTCTime"></p>
+  
+        
+        <span>Learning Track:</span>
+        <p data-testid="myTrack">Frontend</p>
+  
+        <a
+          href="https://github.com/EmmanuelOkon/"
+          data-testid="githubURL"
+          target="_blank"
+          >GitHub Repository</a
+        >
+      </div>
+    </section>
+  </body>
+</html>
